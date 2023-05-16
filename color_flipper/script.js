@@ -1,4 +1,9 @@
 function changeBackgroundColor() {
     let colors = ["red","yellow","green"]
-    document.body.style.backgroundColor = colors[Math.floor(Math.random()*3)];
+    let newColor = colors[Math.floor(Math.random()*3)];
+    if(document.body.style.backgroundColor != newColor){
+        document.body.style.backgroundColor = newColor;
+    }else{
+        changeBackgroundColor()
+    }
 }
