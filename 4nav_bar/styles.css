@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+s
+.navBarButton-dropDownBar{
+  /* max-width: 10em; */
+  margin: auto;
+  align-items: center;
+  align-content: center;
+}
+.navBarButton{
+  border: 2px solid black;
+  padding: 0;
+}
+.dropDownBar{
+  position: fixed;
+  border-radius: 0% 0px 5px 5px;
+  margin-top: 0.5em;
+  border: 1px black;
+  padding-right:2em ;
+  /* animation: rotateMenu 600ms ease-in-out forwards; */
+  transform-origin: top center;
+
+}
+.dropDownBarBtn{
+  text-align: center;
+  border: 1px solid black;
+}
+
+@keyframes rotateMenu {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  70% {
+    transform: rotateX(20deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
