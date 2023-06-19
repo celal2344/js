@@ -1,8 +1,16 @@
 var bar1Elements = ["Home","About","Services","Contact"];
 var bar2Elements = ["sa","qw","zx"];
-var arBars = [bar1Elements,bar2Elements];
-function openBar(e){    
-        var id = parseInt(e.target.id.slice(-1));
+var bar3Elements = ["swqrewer","qrqwerqwrqwrwqerw","rwqerqwrqwerzx"];
+var arBars = [bar1Elements,bar2Elements,bar3Elements];
+function closeDropDownBar(dropDownBar){
+    dropDownBar.classList.remove("active");
+    dropDownBar.innerHTML = "";
+    console.log(dropDownBar);
+    dropDownBar.style.animation = "";
+}
+function openBar(e){
+        console.log(e);    
+        var id = parseInt(e.id.slice(-1));
         console.log(id);
         var barElements = arBars[id - 1];
         console.log(barElements);
@@ -10,15 +18,12 @@ function openBar(e){
         console.log(ddbID);
         var dropDownBar = document.getElementById(ddbID);
         if(dropDownBar.classList.contains("active")){//already open
-            dropDownBar.classList.remove("active");
-            dropDownBar.innerHTML = "";
-            console.log(dropDownBar);
-            dropDownBar.style.animation = "";
+            closeDropDownBar(dropDownBar);
         }  
         else{//not open
             var strAdd = "";
             barElements.forEach(function(e, i){
-                    strAdd += '                <a class="dropDownBarBtn dropdown-item"  href="#" id="dropDownBar' + ddbID + 'Btn' + parseInt(i+1) + '">' + e + '</a>\n';
+                    strAdd += '                <a class="dropDownBarBtn"  href="#" id="dropDownBar' + ddbID + 'Btn' + parseInt(i+1) + '">' + e + '</a><br>\n';
             });
             dropDownBar.innerHTML = strAdd;
             dropDownBar.className += ' active';
@@ -26,7 +31,8 @@ function openBar(e){
             console.log(dropDownBar);
         }
 }
-var navBarButton1 = document.getElementById("navBarBtn1"); 
-navBarButton1.addEventListener("click",openBar);
-var navBarButton2 = document.getElementById("navBarBtn2"); 
-navBarButton2.addEventListener("click",openBar);
+document.addEventListener("click",function(e){
+    if(!dropDownBar.contains(e.target)){
+        closeDropDownBar(dropDownBar);
+        }
+    });

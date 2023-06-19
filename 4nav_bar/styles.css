@@ -1,28 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
-s
-.navBarButton-dropDownBar{
-  /* max-width: 10em; */
-  margin: auto;
-  align-items: center;
-  align-content: center;
+.nav{
+  /* border: 2px solid blue; */
+  position:absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding:0;
+  left: 0;
+  justify-content: center;
 }
-.navBarButton{
-  border: 2px solid black;
-  padding: 0;
+.navBarContainer{
+  border: 2px solid green;
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  margin: 0;
+  clear: both;
 }
+/* .navBarButton{
+  border: 2px solid red;
+  text-align: center;
+  position: static;
+  flex-direction: row;
+  padding: 1em 1em 0em 1em;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+} */
+.navBarBtn{
+  border: 2px solid brown;
+  margin: -3%;
+  display: flex;
+}
+.navBarBtn:hover{
+  background-color: gray;
+}
+
 .dropDownBar{
   position: fixed;
-  border-radius: 0% 0px 5px 5px;
-  margin-top: 0.5em;
-  border: 1px black;
-  padding-right:2em ;
-  /* animation: rotateMenu 600ms ease-in-out forwards; */
-  transform-origin: top center;
-
+  min-width: max-content;
+  border-radius: 0px 0px 5px 5px;
+  margin-top: 0.7em;
+  /* border: 2px solid purple; */
 }
 .dropDownBarBtn{
-  text-align: center;
-  border: 1px solid black;
+  min-width: max-content;
+  padding: 0em 100% 0em 100%;
+  border: 2px solid black;
 }
 
 @keyframes rotateMenu {
