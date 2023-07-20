@@ -1,0 +1,2 @@
+admin page:
+add books(make user choose from google books(or any book database)), add school, login

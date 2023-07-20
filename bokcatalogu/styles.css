@@ -1,0 +1,17 @@
+.container{
+    border: solid 1px;
+    width: 70vh;
+}
+.bookCover{
+    width: 30vh;
+    height: 50vh;   
+}
+.bookDescription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-control:focus {
+    border-color: rgb(0, 140, 255);
+    box-shadow: inset 0 0px 0px 0, 0 0 0px 0;
+}

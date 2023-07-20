@@ -1,0 +1,45 @@
+{
+    "Polisiye": [
+        {
+            "_id": {
+                "$oid": "64ad72a1f0ad261b581ef1a8"
+            },
+            "name": "kitap2",
+            "author": "yazar2",
+            "publisher": "yayınevi2",
+            "page": 200,
+            "price": 20,
+            "image": "/mirz/fot1.jpeg",
+            "description": "açıklama2",
+            "releaseDate": "1699304400000"           
+        }
+    ],
+    "Tarih": [
+        {
+            "_id": {
+                "$oid": "64ad71eff0ad261b581ef1a7"
+            },
+            "name": "kitap1",
+            "author": "profdrpc",
+            "publisher": "yayıncıking",
+            "page": 100,
+            "price": 10,
+            "image": "/mirz/fot2.jpeg",
+            "description": "baya iyi kitap bilgisayar felan",
+            "releaseDate": "1699304400000"
+        },
+        {
+            "_id": {
+                "$oid": "64ad72b7f0ad261b581ef1a9"
+            },
+            "name": "kitap3",
+            "author": "elektrikadam",
+            "publisher": "elektroyayın",
+            "page": 300,
+            "price": 30,
+            "image": "/mirz/fot3.jpg",
+            "description": "elektron ve protonlu kitap",
+            "releaseDate": "1696626000000"
+        }
+    ]
+}
